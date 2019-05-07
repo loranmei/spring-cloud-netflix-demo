@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: service-eureka
+  profiles:
+    active: dev
+
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
+  server:
+    enable-self-preservation: false
+    registry-sync-retry-wait-ms: 5000
